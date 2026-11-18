@@ -1,0 +1,82 @@
+HTML BOilerplate
+
+Introduction
+
+All HTML documentshave the dame basic structure or boilerplate tha needs to be in place before anything useful can be done. 
+In this lesson, we will explore the different parts of this boilerplate and see how it all fits together.
+
+Lesson overview
+This section contains a general overview if topics that you will learn in this lesson.
+.How to write the basic boilerplate for an HTML document.
+.Hoiw to open HTML documents in your browser.
+
+Creating an HTML file
+
+To demonstrate an HTML boilerplate, we first need an HTML file to work with.
+Create a new folder on your computer and name it html-boilerplate. Within that folder create a new file and name it index.html.
+
+We should always name the HTML file that will contain the homepage of our website index.html. 
+This is because web servers will by default look for an index.html page when users land on our websites - and not having one wil cause big problems.
+
+The DOCTYPE
+
+Every HTML page starts with a doctype declaration. The doctype's purpose is to tell the browser what version of HTML it should use to render the document.
+The latest version of HTML is HTML5, and the doctype for that version is <!DOCTYPE html>
+
+The doctype for older versions of HTML, were a bit more complicated. For example, this is the dictype declaration for HTML 4.
+<!DOCTYPE HTML PUBLIC "-//W#C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+HTML element
+
+Known as root element if the document, meaning that every other element in the document will be a descendant of it.
+HTML element should include in every HTML document.
+Word lang. It reoresents an HTML attribute which is associated with the given HTML tag i.e <html> in this case. These attributes provides additional information about HTML elements. (More about HTML attrinutes in the following lesson.)
+
+lang attribute
+
+lang specifies the language of the text content in that element. This attribute is primarily used for improving accessibility of the webpage.
+It allows assistive technologies, for example screen readers, to adapt according to the language and invoke correct pronuciation.
+
+Head element
+
+The <head> element is where we put important meta-information
+about our webpagesm and stuffs required for our webpages to render correctly in browser.
+Inside the <head>, we should not use any element that display content on the webpage.
+
+Add a <head> element with a <meta> element and a title within it.
+The <head> element goes within the <html> element and should always be the first element under the opening <html> tag.
+
+Meta element
+
+<!-- UTF‑8 is a Unicode text encoding that uses 1–4 bytes per character and is the dominant format for webpages (about 99.1% as of 2026). -->
+We should always have the <meta> tag with the charset encoding of the webpage in the <head> element: <meta charset="UTF-8">
+
+Setting the encoding is very important becuase it ensures that the webpage will display special symbols and characters from different languages correctly in browser.
+
+Title element
+
+Another element we should always include in the head if an HTML document is the <title> elemnt:
+
+<title>My First Webpage</title>
+
+The <title> element is used to give webpages a human-readable tittle, which is displayed in our webpages's browser tab. For example, if you look at the current tab's name of your browser,
+it will read "HTML Boilerplate | The Odin project"; this is the title of the current .html file.
+
+If we didn't include a <title> element, the webpage's title would default to its file name.
+
+Body element
+
+The final element needed to compelete the HTML boilerplate is the <body> element, This is where all the content that will be displayed to users will go
+- the text, images, lists, links, and so on.
+
+To complete the boilerplate, add a <body> element to the index.html file. The <body> element also goes within the <html> element and is always below the <head> element, like so:
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>testexamdpel</title>
+    </head>
+    <body>
+    </body>
+</html>
